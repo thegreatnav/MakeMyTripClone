@@ -1,0 +1,1087 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MakeMyTrip - #1 Travel Website</title>
+        <link rel="icon" href="MMYT.png">
+        <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src ="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>  
+        <script src ="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>  
+        <script src ="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>  
+        <link rel ="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+        <script type = "text/javascript">  
+            window.onload = function(){  
+            var divelementouter=document.querySelector('.swline0');
+            var divelement=divelementouter.querySelector('.flights');
+            turnblueswline0element(divelement);
+
+            var divelement2outer=document.querySelector('.seconddiv');
+            var divelement2=divelement2outer.querySelector('.firstbooking');
+            turnblueoffer(divelement2);
+
+            var deftripmodeouter=document.querySelector('.tripmode');
+            var deftripmode=deftripmodeouter.getElementsByTagName('input');
+            for(i=0;i<deftripmode.length;i++)
+            {
+                if(deftripmode[i].id=="radio1")
+                deftripmode[i].checked=true;
+            }
+
+            var drpdn=document.querySelector('.dropdown-content');
+            var adultouter=drpdn.querySelector('.adultsbar');
+            var adultinner=adultouter.getElementsByTagName('button');
+            for(i=0;i<adultinner.length;i++)
+            {
+                if(adultinner[i].innerHTML=="1")
+                    adultinner[i].classList.add("clicked");
+            }
+
+            var childouter=drpdn.querySelector('.childrenbar');
+            var childinner=childouter.getElementsByTagName('button');
+            for(i=0;i<childinner.length;i++)
+            {
+                if(childinner[i].innerHTML=="0")
+                    childinner[i].classList.add("clicked");
+            }
+
+            var infantouter=drpdn.querySelector('.infantbar');
+            var infantinner=infantouter.getElementsByTagName('button');
+            for(i=0;i<infantinner.length;i++)
+            {
+                if(infantinner[i].innerHTML=="0")
+                    infantinner[i].classList.add("clicked");
+            }
+
+            var travelclassouter=drpdn.querySelector('.travelclassbar');
+            var travelclassinner=travelclassouter.getElementsByTagName('button');
+            for(i=0;i<travelclassinner.length;i++)
+            {
+                if(travelclassinner[i].innerHTML=="Economy/Premium Economy")
+                    travelclassinner[i].classList.add("clicked");
+            }
+
+            document.getElementById('fromcity').value="Mumbai";
+            document.querySelector('.fromairport').innerHTML="Chhatrapati Shivaji International Airport – BOM";
+            document.getElementById('tocity').value="Kochi";
+            document.querySelector('.toairport').innerHTML="Cochin International Airport – COK";
+
+            var depdateouter=document.querySelector('.departure');
+            var depdateinner=depdateouter.querySelector('#picker1');
+            var today = new Date();
+            var dd = String(today.getDate()).padStart(2, '0');
+            var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+            var yyyy = today.getFullYear();
+            today = dd + '/' + mm + '/' + yyyy;
+            depdateinner.value=today;
+
+            var fareouter=document.querySelector('.farebar');
+            var fareinner=fareouter.getElementsByTagName('input');
+            for(i=0;i<fareinner.length;i++)
+            {
+                if(fareinner[i].value=="Regular")
+                fareinner[i].checked=true;
+            }
+            }  
+            </script>
+    </head>
+    <body >
+        <header>
+            <div class="firstdiv">
+                <div class="nav-bar">
+                    <div class="mmtlogo">
+                        <div class="logomain"></div>
+                    </div>
+                    <div class="offer" onclick="window.open('https://www.makemytrip.com/offers')">
+                        <div class="offerlogo"></div>
+                        <div class="offertext">
+                            <div class="offerline1">Super Offers</div>
+                            <div class="offerline2">Explore great deals & offers</div>
+                        </div>              
+                    </div>
+                    <div class="mybiz" onclick="window.open('https://mybiz.makemytrip.com')">
+                        <div class="mybizlogo"></div>
+                        <div class="mybiztext">
+                            <div class="mybizline1">Introducing MyBiz</div>
+                            <div class="mybizline2">Business Travel Solution</div>
+                        </div>
+                    </div>
+                    <div class="mytrips" onclick="window.open('https://supportz.makemytrip.com/Mima/BookingSummary')">
+                        <div class="mytripslogo"></div>
+                        <div class="mytripstext">
+                            <div class="mytripsline1">My Trips</div>
+                            <div class="mytripsline2">Manage your Bookings</div>
+                        </div>    
+                    </div>
+                    <div class="login">
+                        <div class="loginlogomy"></div>
+                        <div class="logintext">Login or Create Account</div>
+                        <div class="logoarrow"></div>
+                    </div>
+                    <div class="country">
+                        <div class="countrylogo"></div>
+                        <div class="countrytext">IN | ENG | INR</div>
+                        <div class="logoarrow"></div>
+                    </div>
+                </div>
+                <div class="searchwidget">
+                    <div class="swline0">
+                        <div class="flights swline0element" onclick="turnblueswline0element(this);">
+                            <div class="flighticon icon"></div>
+                            <div class="flightlabel iconlabel">Flights</div>
+                        </div>
+                        <div class="hotels swline0element" onclick="turnblueswline0element(this);">
+                            <div class="hotelicon icon"></div>
+                            <div class="hotellabel iconlabel">Hotels</div>
+                        </div>
+                        <div class="homestays swline0element" onclick="turnblueswline0element(this);">
+                            <div class="homestayicon icon"></div>
+                            <div class="homestayabel iconlabel">Homestays</div>
+                        </div>
+                        <div class="holidaypackages swline0element" onclick="turnblueswline0element(this);">
+                            <div class="holidayicon icon"></div>
+                            <div class="holidaylabel iconlabel">Holiday Packages</div>
+                        </div>
+                        <div class="trains swline0element" onclick="turnblueswline0element(this);">
+                            <div class="trainicon icon"></div>
+                            <div class="trainlabel iconlabel">Trains</div>
+                        </div>
+                        <div class="buses swline0element" onclick="turnblueswline0element(this);">
+                            <div class="busicon icon"></div>
+                            <div class="buslabel iconlabel">Buses</div>
+                        </div>
+                        <div class="cabs swline0element" onclick="turnblueswline0element(this);">
+                            <div class="cabicon icon"></div>
+                            <div class="cablabel iconlabel">Cabs</div>
+                        </div>
+                        <div class="forex swline0element" onclick="turnblueswline0element(this);">
+                            <div class="forexicon icon"></div>
+                            <div class="forexlabel iconlabel">Forex</div>
+                        </div>
+                        <div class="charterflights swline0element" onclick="turnblueswline0element(this);">
+                            <div class="charterflighticon icon"></div>
+                            <div class="charterflightlabel iconlabel">Charter Flights</div>
+                        </div>
+                    </div>
+                    <div class="swline1">                        
+                        <div class="tripmode">
+                            <div class="oneway">
+                                <input type="radio" id="radio1" name="mytrip" value="O">
+                                <label for="radio1">One Way</label>
+                            </div>
+                            <div class="roundtrip">
+                                <input type="radio" id="radio2" name="mytrip" value="R">
+                                <label for="radio2">Round Trip</label>
+                            </div>
+                            <div class="multicity">
+                                <input type="radio" id="radio3" name="mytrip" value="O">
+                                <label for="radio3">Multi City</label>
+                            </div>
+                        </div> 
+                        <div class="international">Book International and Domestic Flights</div>                       
+                    </div>
+                    <div class="swline2">
+                        <div class="from">
+                            <strong>From</strong>
+                            <div class="fromcity city">
+                                <div class="fromsearchinput">
+                                    <input id="fromcity" type="text" name="fromcity" placeholder="Enter City">
+                                    <div class="autocombox"></div>
+                                </div>
+                            </div>
+                            <div class="fromairport airport"></div>
+                        </div>
+                        
+                        <div class="to">
+                            <strong>To</strong>
+                            <div class="tocity city">
+                                <div class="tosearchinput">
+                                    <input id="tocity" type="text" name="tocity" placeholder="Enter City">
+                                    <div class="autocombox"></div>
+                                </div>
+                            </div>
+                            <div class="toairport airport"></div>
+                        </div>
+                        <div class="departure">
+                            <strong>Departure Date</strong>
+                            <div class="bluearrowdown"></div>
+                            <div class='input-group date'>
+                                <input type='text' class="form-control" id='picker1'>
+                            </div>
+                            <script type="text/javascript">
+                                $(function () {
+                                    $('#picker1').datetimepicker({
+                                        format: 'DD/MM/YYYY',
+                                    });
+                                });
+                            </script>
+                        </div>
+                        <div class="return">
+                            <strong>Return Date</strong>
+                            <div class="bluearrowdown"></div>
+                            <div class='input-group date'>
+                                <input type='text' class="form-control" id='picker2' placeholder="Tap to add" >
+                            </div>
+                            <script type="text/javascript">
+                                $(function () {
+                                    $('#picker2').datetimepicker({
+                                        format: 'DD/MM/YYYY',
+                                    });
+                                });
+                            </script>
+                        </div>
+                        <div class="dropdown" onclick="onclicktraveldialog(event);">
+                            <div class="travellers">
+                                <strong>Travellers & Class</strong>
+                                <div class="bluearrowdown"></div>
+                                <div class="persons">
+                                    <div class="numpersons">
+                                        1
+                                    </div>
+                                    <div class="traveller">Traveller</div>
+                                </div>
+                                <div class="travelclass">
+                                    Economy/Premium Economy
+                                </div>                                
+                                    <div class="dropdown-content">
+                                        <div class="adults">
+                                            <div class="adultslabel dropdownlabel">
+                                                <div class="line1">ADULTS (12y+)</div>
+                                                <div class="line2">on the day of travel</div>
+                                            </div>
+                                            <div class="adultsbar bar">
+                                                <div class="buttonless9">
+                                                    <button class="button" onclick="toggleadult(this);">1</button>
+                                                    <button class="button" onclick="toggleadult(this);">2</button>
+                                                    <button class="button" onclick="toggleadult(this);">3</button>
+                                                    <button class="button" onclick="toggleadult(this);">4</button>
+                                                    <button class="button" onclick="toggleadult(this);">5</button>
+                                                    <button class="button" onclick="toggleadult(this);">6</button>
+                                                    <button class="button" onclick="toggleadult(this);">7</button>
+                                                    <button class="button" onclick="toggleadult(this);">8</button>
+                                                    <button class="button" onclick="toggleadult(this);">9</button>
+                                                </div>
+                                                <div class="buttongreater9">
+                                                    <button class="button" onclick="toggleadult(this);">>9</button>
+                                                </div>                                        
+                                            </div>
+                                        </div>
+                                        <div class="childreninfant">
+                                            <div class="children">
+                                                <div class="childrenlabel dropdownlabel">
+                                                    <div class="line1">CHILDREN (2y-12y)</div>
+                                                    <div class="line2">on the day of travel</div>
+                                                </div>
+                                                <div class="childrenbar bar">
+                                                    <div class="buttonless6">
+                                                        <button class="button" onclick="togglechildren(this);">0</button>
+                                                        <button class="button" onclick="togglechildren(this);">1</button>
+                                                        <button class="button" onclick="togglechildren(this);">2</button>
+                                                        <button class="button" onclick="togglechildren(this);">3</button>
+                                                        <button class="button" onclick="togglechildren(this);">4</button>
+                                                        <button class="button" onclick="togglechildren(this);">5</button>
+                                                        <button class="button" onclick="togglechildren(this);">6</button>
+                                                    </div>
+                                                    <div class="buttongreater6">
+                                                        <button class="button" onclick="togglechildren(this);">>6</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="infants">
+                                                <div class="infantslabel dropdownlabel">
+                                                    <div class="line1">INFANTS (below 2y)</div>
+                                                    <div class="line2">on the day of travel</div>
+                                                </div>
+                                                <div class="infantbar bar">
+                                                    <div class="buttonless6">
+                                                        <button class="button" onclick="toggleinfant(this);">0</button>
+                                                        <button class="button" onclick="toggleinfant(this);">1</button>
+                                                        <button class="button" onclick="toggleinfant(this);">2</button>
+                                                        <button class="button" onclick="toggleinfant(this);">3</button>
+                                                        <button class="button" onclick="toggleinfant(this);">4</button>
+                                                        <button class="button" onclick="toggleinfant(this);">5</button>
+                                                        <button class="button" onclick="toggleinfant(this);">6</button>
+                                                    </div>
+                                                    <div class="buttongreater6">
+                                                        <button class="button" onclick="toggleinfant(this);">>6</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="choosetravelclass">
+                                            <div class="choosetravelclasslabel dropdownlabel">
+                                                <div class="line1">CHOOSE TRAVEL CLASS</div>
+                                            </div>
+                                            <div class="travelclassbar">
+                                                <button class="choosetravelbutton" onclick="toggle1(this);" value="E">Economy/Premium Economy</button>
+                                                <button class="choosetravelbutton" onclick="toggle1(this);" value="PE">Premium Economy</button>
+                                                <button class="choosetravelbutton" onclick="toggle1(this);" value="B">Business</button>
+                                                <button class="choosetravelbutton" onclick="toggle1(this);" value="F">First Class</button>
+                                            </div>
+                                        </div>
+                                        <button class="applybutton" onclick="apply(this);">APPLY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="swline3">
+                            <div class="faretype">
+                                <div class="faretypelabel">Select A Fare Type:</div>
+                                <div class="farebar">
+                                    <div class="regularfare fare">
+                                        <input type="radio" id="fareradio1" name="faretype" value="Regular">
+                                        <label for="fareradio1">Regular Fares</label>
+                                    </div>                                    
+                                    <div class="armedforcefare fare" data-tooltip="Applicable for serving and retired personnel of Armed Forces and Paramilitary Forces, their recognised dependants like spouses and children, and war widows. It is mandatory to show a valid ID or dependant card at the airport, without which boarding might be denied.">
+                                        <input type="radio" id="fareradio2" name="faretype" value="Armed">
+                                        <label for="fareradio2">Armed Forces Fares</label>
+                                    </div>
+                                    <div class="studentfare fare" data-tooltip="Only students above 12 years of age are eligible for special fares and/or additional baggage allowances. Carrying valid student ID cards and student visas (where applicable) is mandatory, else the passenger may be denied boarding or asked to pay for extra baggage.">
+                                        <input type="radio" id="fareradio3" name="faretype" value="Student">
+                                        <label for="fareradio3">Student Fares</label>
+                                    </div>
+                                    <div class="seniorcitizenfare fare" data-tooltip="Only senior citizens above the age of 60 years can avail this special fare. It is mandatory to produce proof of Date of Birth at the airport, without which prevailing fares will be charged.">
+                                        <input type="radio" id="fareradio4" name="faretype" value="Senior">
+                                        <label for="fareradio4">Senior Citizen Fares</label>
+                                    </div>
+                                    <div class="doctorfare fare" data-tooltip="Applicable only for medical personnel. It is mandatory to show a valid ID at the airport, without which boarding may be denied.">
+                                        <input type="radio" id="fareradio5" name="faretype" value="Doctor">
+                                        <label for="fareradio5">Doctors & Nurses Fares</label>
+                                    </div>
+                                    <div class="doubleseatfare fare" data-tooltip="Applicable only for medical personnel. It is mandatory to show a valid ID at the airport, without which boarding may be denied.">
+                                        <input type="radio" id="fareradio6" name="faretype" value="DoubleSeat">
+                                        <label for="fareradio6">Double Seat Fares</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trendingsearches">
+                                <div class="trendingsearcheslabel">Trending Searches:</div>
+                                <div class="ts1">
+                                    <div class="city1">Mumbai</div>
+                                    <div class="toarrow"></div>
+                                    <div class="city2">Bangkok</div>
+                                </div>
+                                <div class="ts2">
+                                    <div class="city1">Delhi</div>
+                                    <div class="toarrow"></div>
+                                    <div class="city2">Paris</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swapicon"></div>  
+                    <button class="searchbutton" onclick="searchbutton_function();">SEARCH</button>
+                    <div class="exploremore">
+                        <div class="exploremorelogo"></div>
+                        Explore More
+                        <div class="exploremorelogo"></div>
+                    </div>
+                </div>
+            </div>           
+        </header>
+        <div class="seconddiv">
+            <div class="bar1">
+                <div class="where2go" onclick="window.open('https://www.makemytrip.com/tripideas/')">
+                    <div class="where2gologo"></div>
+                    <div class="where2golabel">Where2Go</div>
+                </div>
+                <div class="insurance" onclick="window.open('https://www.tripmoney.com/partner/mmt/context/insurance/travel-landing?cmp=&ins_new_flow=false&minver=1&mmtauthkey=mmt-auth&platform=DESKTOP&product=insurance')">
+                    <div class="insurancelogo"></div>
+                    <div class="insurancelabel">
+                        <div class="line1">Insurance</div>
+                        <div class="line2">For International Trips</div>
+                    </div>
+                </div>
+                <div class="flights" onclick="window.open('https://www.makemytrip.com/flight/destinationPicker?tripType=O&sourcePage=home_banner&from=DEL&to=ANYWHERE')">
+                    <div class="flightslogo"></div>
+                    <div class="flightslabel">
+                        <div class="line1">Explore International Flights</div>
+                        <div class="line2">Cheapest Flights to Paris, Bali, Tokyo & more</div>
+                    </div>
+                </div>
+                <div class="mice" onclick="window.open('https://www.makemytrip.com/mice')">
+                    <div class="micelogo"></div>
+                    <div class="micelabel">
+                        <div class="line1">MICE</div>
+                        <div class="line2">Offsites, Events & Meetings</div>
+                    </div>
+                </div>
+                <div class="giftcards" onclick="window.open('https://www.makemytrip.com/gift-cards')">
+                    <div class="giftcardslogo"></div>
+                    <div class="giftcardslabel">Gift Cards</div>
+                </div>
+            </div>
+            <div class="bar2">
+                <div class="offerheader">
+                    <div class="offerslabel">Offers</div>
+                    <div class="offerbar">
+                        <div class="firstbooking offer" onclick="turnblueoffer(this);">ON 1st BOOKING</div>
+                        <div class="alloffers offer" onclick="turnblueoffer(this);">All Offers</div>
+                        <div class="flights offer" onclick="turnblueoffer(this);">Flights</div>
+                        <div class="hotels offer" onclick="turnblueoffer(this);">Hotels</div>
+                        <div class="holidays offer" onclick="turnblueoffer(this);">Holidays</div>
+                        <div class="trains offer" onclick="turnblueoffer(this);">Trains</div>
+                        <div class="cabs offer" onclick="turnblueoffer(this);">Cabs</div>
+                        <div class="bankoffers offer" onclick="turnblueoffer(this);">Bank Offers</div>
+                    </div>
+                    <div class="viewdiv">
+                        <button class="viewall" onclick="window.open('https://www.makemytrip.com/offers')">
+                            VIEW ALL
+                            <div class="viewall_logo"></div>                    
+                        </button>
+                        <div class="navbuttons">
+                            <button class="prev" id="goleft" onclick="sideScroll('left',35,875,50);"><</button>
+                            <button class="next" id="goright" onclick="sideScroll('right',35,875,50);">></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="offercards">
+                    <section class="cards">
+                        <div class="card-content firstbooking" id="fb1" onclick="window.open('https://www.makemytrip.com/promos/mmt0-offers-06092022.html?offer=dh')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line1">For Your 1st Hotel Booking!</div>
+                                    <div class="line2">Up to Rs.5000 OFF</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="code">Code: WELCOMEMMT</div>
+                                <div class="viewdetails">View Details</div>
+                            </div>
+                        </div>
+                        <div class="card-content firstbooking" id="fb2" onclick="window.open('https://www.makemytrip.com/promos/mmt0-offers-06092022.html?offer=bus&detail_image=no')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line1">For Your 1st Bus Booking!</div>
+                                    <div class="line2">Up to Rs.100 OFF*</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="code">Code: WELCOMEMMT</div>
+                                <div class="viewdetails">View Details</div>
+                            </div>
+                        </div>
+                        <div class="card-content firstbooking" id="fb3" onclick="window.open('https://www.makemytrip.com/promos/mmt0-offers-06092022.html?offer=trains')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line1">For Your 1st Train Booking!</div>
+                                    <div class="line2">Zero Convenience Fee</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="code">Code: WELCOMEMMT</div>
+                                <div class="viewdetails">View Details</div>
+                            </div>
+                        </div>
+                        <div class="card-content firstbooking" id="fb4" onclick="window.open('https://www.makemytrip.com/promos/mmt0-offers-06092022.html?offer=cabs')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line1">For Your 1st Outstation Cab Booking!</div>
+                                    <div class="line2">Up to Rs.200 OFF*</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="code">Code: WELCOMEMMT</div>
+                                <div class="viewdetails">View Details</div>
+                            </div>
+                        </div>
+                        <div class="card-content firstbooking" id="fb5" onclick="window.open('https://www.makemytrip.com/promos/mmt0-offers-06092022.html?offer=holidays')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line1">For Your 1st Holiday Booking!</div>
+                                    <div class="line2">Up to 30% OFF*</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="code">Code: WELCOMEMMT</div>
+                                <div class="viewdetails">View Details</div>
+                            </div>
+                        </div>
+                        <div class="card-content firstbooking" id="fb6" onclick="window.open('https://www.makemytrip.com/promos/mmt0-offers-06092022.html?offer=all')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line1">A Welcome Surprise For You!</div>
+                                    <div class="line2">Up to 30% OFF* on your first flight, hotel & more booking!</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="code">Code: WELCOMEMMT</div>
+                                <div class="viewdetails">View Details</div>
+                            </div>
+                        </div>
+                        <div class="card-content flights" id="fl1" onclick="window.open('https://www.makemytrip.com/promos/student-if-fest-020623.html?detail_image=no')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line1">LIVE NOW: Student-on-Board Sale</div>
+                                    <div class="line2">Grab A+ Deals on International Flights for trips to/from university.</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="viewdetails">Explore Now</div>
+                            </div>
+                        </div>
+                        <div class="card-content flights" id="fl2" onclick="window.open('https://www.makemytrip.com/promos/mmt-flight-insurance.html?detail_image=no')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line1">Get Your Journey Assured @ JUST Rs.79*</div>
+                                    <div class="line2">and get claim of up to Rs.3000*.</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="viewdetails">Book Now</div>
+                            </div>
+                        </div>
+                        <div class="card-content flights" id="fl3" onclick="window.open('https://www.makemytrip.com/promos/indian-bank-dc-10072023.html?detail_image=no')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line1">Grab Up to 15% OFF* on</div>
+                                    <div class="line2">domestic & international flights + hotels for your refreshing travel breaks!</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="viewdetails">View Details</div>
+                            </div>
+                        </div>
+                        <div class="card-content flights" id="fl4" onclick="window.open('https://www.makemytrip.com/promos/hdfc-emi-22062023.html?detail_image=no')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line1">Grab Up to Rs.30,000 OFF* on</div>
+                                    <div class="line2">flights, hotels & holiday packages.</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="viewdetails">Book Now</div>
+                            </div>
+                        </div>
+                        <div class="card-content flights" id="fl5" onclick="window.open('https://www.makemytrip.com/promos/jazeera-airways-sale-190623.html?detail_image=no')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line1">Special Discount on Jazeera Airways Flights!</div>
+                                    <div class="line2">Grab Rs.1000 OFF* per passenger on international flights from Bengaluru & Hyderabad.</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="viewdetails">Book Now</div>
+                            </div>
+                        </div>
+                        <div class="card-content flights" id="fl6" onclick="window.open('https://www.makemytrip.com/promos/dtd-avaan.html?detail_image=no')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line1">NOW AVAIL:Door to Door Baggage Delivery with Us!</div>
+                                    <div class="line2">Travel light & transfer your luggage @ less than Rs.100/kg within India!</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="viewdetails">Book Now</div>
+                            </div>
+                        </div>
+                        <div class="card-content hotels" id="hot1" onclick="window.open('https://www.makemytrip.com/hotels/?detail_image=no')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line1">COMING UP ON 25th JULY:</div>
+                                    <div class="line2">Around-the-World Deals with AH-MAZING Deals on International Hotels</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="viewdetails">Book Now</div>
+                            </div>
+                        </div>
+                        <div class="card-content hotels" id="hot2" onclick="window.open('https://www.makemytrip.com/promos/homestays-cricket-offer-020723.html?detail_image=no')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line1">Grab up to 40% OFF* on Homestays & Villas</div>
+                                    <div class="line2">Near Match Venues, this Cricket Season</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="viewdetails">View Details</div>
+                            </div>
+                        </div>
+                        <div class="card-content hotels" id="hot3" onclick="window.open('https://www.makemytrip.com/promos/dh-indusind-02072022.html?detail_image=no')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line1">Grab FLAT 15% OFF* on Hotels and Homestays</div>
+                                    <div class="line2">& treat yourself to a refreshing, luxurious break.</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="viewdetails">View Details</div>
+                            </div>
+                        </div>
+                        <div class="card-content hotels" id="hot4" onclick="window.open('https://www.makemytrip.com/promos/oyofest-19072023.html?detail_image=no')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line1">Book Comfortable Stays at OYO Hotels</div>
+                                    <div class="line2">With EPIC deals!</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="viewdetails">Book Now</div>
+                            </div>
+                        </div>
+                        <div class="card-content holidays" id="hol1" onclick="window.open('https://www.makemytrip.com/promos/holidays-long-weekend-09032023.html?detail_image=no')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line1">LIVE NOW: Weekend Deals on Holiday Packages</div>
+                                    <div class="line2">Grab FLAT 30% OFF* + EXTRA 5% OFF*</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="viewdetails">Book Now</div>
+                            </div>
+                        </div>
+                        <div class="card-content holidays" id="hol2" onclick="window.open('https://www.makemytrip.com/promos/rocky-and-rani-holiday-packages.html?detail_image=no')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line1">Live Up Your Holiday, Bollywood Style!</div>
+                                    <div class="line2">Explore Romantic Holiday Packages Curated for You by Rocky & Rani</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="viewdetails">Book Now</div>
+                            </div>
+                        </div>
+                        <div class="card-content trains" id="tr1" onclick="window.open('https://www.makemytrip.com/promos/train-booking-open-140723.html')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line1">OPEN NOW : Train Bookings for Diwali</div>
+                                    <div class="line2">Avail Free Cancellation & book your tickets</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="viewdetails">Book Now</div>
+                            </div>
+                        </div>
+                        <div class="card-content trains" id="tr2" onclick="window.open('https://www.makemytrip.com/promos/onecard-offers-10062023.html?detail_image=no')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line1">AVAIL: Up to 10% Instant Discount* on</div>
+                                    <div class="line2">bus, cabs & trains for your next getaway.</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="viewdetails">Book Now</div>
+                            </div>
+                        </div>
+                        <div class="card-content trains" id="tr3" onclick="window.open('https://www.makemytrip.com/promos/trains-trip-guarantee.html?popup=noShow&detail_image=no')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line1">Trip Guarantee on Trains!</div>
+                                    <div class="line2">Waitlisted tickets no more. Get a confirmed ticket or a free upgrade to flights, cabs & more.</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="viewdetails">Know More</div>
+                            </div>
+                        </div>
+                        <div class="card-content trains" id="tr4" onclick="window.open('https://www.makemytrip.com/promos/trains-free-cancellation.html?detail_image=no')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line1">Free Cancellation on Train Bookings!</div>
+                                    <div class="line2">Make your train travel easier, penalty free and worry-free.</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="viewdetails">Explore Now</div>
+                            </div>
+                        </div>
+                        <div class="card-content cabs" id="cab1" onclick="window.open('https://www.makemytrip.com/promos/onecard-offers-10062023.html?detail_image=no')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line1">AVAIL: Up to 10% Instant Discount* on</div>
+                                    <div class="line2">bus, cabs & trains for your next getaway.</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="viewdetails">Book Now</div>
+                            </div>
+                        </div>
+                        <div class="card-content cabs" id="cab2" onclick="window.open('https://www.makemytrip.com/promos/hyderabad-airport-cabs-offer-feb23.html?detail_image=no')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line1">ONLY in HYDERABAD: Book Cabs to/from Hyderabad Airport</div>
+                                    <div class="line2">starting @ Rs.699*. Offer valid till 12th March!</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="viewdetails">Book Now</div>
+                            </div>
+                        </div>
+                        <div class="card-content cabs" id="cab3" onclick="window.open('https://www.makemytrip.com/promos/airport-suv-cabs.html?detail_image=no')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line1">NEW: SUV Cabs for Group Airport Transfers!</div>
+                                    <div class="line2">Book @ FLAT 5% OFF*.</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="viewdetails">Book Now</div>
+                            </div>
+                        </div>
+                        <div class="card-content cabs" id="cab4" onclick="window.open('https://www.makemytrip.com/promos/airport-cabs-offers-220223.html?detail_image=no')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line1">MASSIVE PRICE DROP: Book Airport Cabs</div>
+                                    <div class="line2">Valid for select cities ONLY.</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="viewdetails">Book Now</div>
+                            </div>
+                        </div>
+                        <div class="card-content bankoffers" id="b1" onclick="window.open('https://www.makemytrip.com/promos/ih-icici-02012023.html?detail_image=no')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line0">ICICI</div>
+                                    <div class="line1">Grab FLAT 15% OFF* on 3, 4 & 5-Star Stays!</div>
+                                    <div class="line2">for your next international trip.</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="viewdetails">View Details</div>
+                            </div>
+                        </div>
+                        <div class="card-content bankoffers" id="b2" onclick="window.open('https://www.makemytrip.com/promos/df-icici-02012023.html?detail_image=no')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line0">ICICI</div>
+                                    <div class="line1">Grab NOW! FLAT 12% OFF* on Domestic Flights!</div>
+                                    <div class="line2">Valid on ICICI Bank Credit Cards, Credit Cards EMI and Debit Cards</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="viewdetails">View Details</div>
+                            </div>
+                        </div>
+                        <div class="card-content bankoffers" id="b3" onclick="window.open('https://www.makemytrip.com/promos/yes-nce-offers-01072022.html?detail_image=no')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line0">YES</div>
+                                    <div class="line1">Avail Interest-free EMI* + Upto 35% OFF*!</div>
+                                    <div class="line2">on flights, hotels & holiday packages in India & abroad.</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="viewdetails">Book Now</div>
+                            </div>
+                        </div>
+                        <div class="card-content bankoffers" id="b4" onclick="window.open('https://www.makemytrip.com/promos/mobikwik-01012023.html?detail_image=no')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line0">YES</div>
+                                    <div class="line1">For This Travel Season:</div>
+                                    <div class="line2">Grab FLAT 10% OFF* on Domestic Flights, Hotels, Cabs & Buses</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="code">Code: WELCOMEMMT</div>
+                                <div class="viewdetails">View Details</div>
+                            </div>
+                        </div>
+                        <div class="card-content bankoffers" id="b5" onclick="window.open('https://www.makemytrip.com/promos/dh-federal-03012023.html?detail_image=no')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line0">FEDERAL BANK</div>
+                                    <div class="line1">GET FLAT 15% OFF* on Domestic Hotels & Homestays!</div>
+                                    <div class="line2">Grab now and #SaveBIG on your next stay.</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="viewdetails">Book Now</div>
+                            </div>
+                        </div>
+                        <div class="card-content bankoffers" id="b6" onclick="window.open('https://www.makemytrip.com/promos/ih-federal-03012023.html?detail_image=no')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line0">FEDERAL BANK</div>
+                                    <div class="line1">FLAT 15% OFF* on International Hotels!</div>
+                                    <div class="line2">Grab now and enjoy big savings on your dream trip.</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="viewdetails">Book Now</div>
+                            </div>
+                        </div>
+                        <div class="card-content bankoffers" id="b7" onclick="window.open('https://www.makemytrip.com/promos/sbi-offers-07012021.html?lob=ih&detail_image=no')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line0">SBI</div>
+                                    <div class="line1">FLAT 12% OFF* on International Hotels!</div>
+                                    <div class="line2">With SBI Credit Cards</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="viewdetails">View Details</div>
+                            </div>
+                        </div>
+                        <div class="card-content bankoffers" id="b8" onclick="window.open('https://www.makemytrip.com/promos/sbi-offers-07012021.html?lob=all&detail_image=no')">
+                            <div class="header">
+                                <div class="image"></div>
+                                <div class="label3">
+                                    <div class="line0">SBI</div>
+                                    <div class="line1">Grab FLAT 10% OFF* on Domestic Flights!</div>
+                                    <div class="line2">With SBI Credit Card & fly away to a soothing destination for a break.</div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="tc">T&C's Apply</div>
+                                <div class="viewdetails">Book Now</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>               
+            </div>
+            <div class="bar3">
+                <div class="travelguidelines" onclick="window.open('https://www.makemytrip.com/travel-guidelines/?schedule=webview')">
+                    <div class="logo"></div>
+                    <div class="label2">
+                        <div class="line1">Planning to book an international flight?</div>
+                        <div class="line2">Check Travel Guidelines</div>
+                    </div>                    
+                </div>
+                <div class="changelanguage">
+                    <div class="logo"></div>
+                    <div class="label2">
+                        <div class="line1">We are now available in हिंदी !</div>
+                        <div class="line2">Change Language</div>
+                    </div>                    
+                </div>
+                <div class="webcheckin" onclick="window.open('https://www.makemytrip.com/promos/web-check-in.html')">
+                    <div class="logo"></div>
+                    <div class="label2">
+                        <div class="line1">Complete your web check-in on MakeMyTrip in easy steps.</div>
+                        <div class="line2">Know More</div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="bar4">
+                <div class="maindiv">
+                    <div class="div1">
+                        <div class="downloadlogo"></div>
+                        <div class="downloadlabel">
+                            <div class="line1">Download App Now !</div>
+                            <div class="line2">Use code <strong>WELCOME MMT</strong> and get <strong>FLAT 12%</strong> OFF* on your first domestic flight booking</div>
+                        </div>
+                    </div>
+                    <div class="div2">
+                        <div class="phone">
+                            <div class="countrylogo"></div>
+                            <div class="stdcode">+91 - </div>
+                            <input class="phonenum" type="text" placeholder="Enter mobile number">
+                            <div class="getapp">GET APP LINK</div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="div3">
+                    <div class="item1" onclick="window.open('https://play.google.com/store/apps/details?id=com.makemytrip&$web_only=true&_branch_match_id=1211871047683351787&_branch_referrer=H4sIAAAAAAAAAw3KSQoAIAgAwB/lvd9IBkm5YEL0%2B5rzjEzfFQDdF%2BvcRXB2uRnspZlAB1QKY/qB7OgypAe6NG0fNAAAAA%3D%3D&pli=1')"></div>
+                    <div class="item2" onclick="window.open('https://apps.apple.com/us/app/makemytrip/id530488359?%24web_only=true&_branch_match_id=1211871047683351787&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXTywoyMnMyy7Wy03MTs2tLCnKLNBLzs%2FVT9XPzC8GSqbkl%2Bfl5CemAABMVDWbMAAAAA%3D%3D')"></div>
+                    <div class="item3"></div>
+                </div>                
+            </div>
+            <div class="bar5">
+                <div class="div1"></div>
+                <div class="div2">
+                    <div class="moneytriplogo"></div>
+                    <div class="forex"><strong>Forex</strong> at best exchange rates delivered at your doorstep</div>
+                </div>
+                <div class="div3" onclick="window.open('https://www.tripmoney.com/travel-loan')">
+                    ORDER NOW
+                    <div class="viewall_logo"></div>
+                </div>
+            </div>
+            <div class="bar6">
+                <div class="div1">
+                    <div class="logo"></div>
+                    <div class="label">
+                        <div class="line1">Chennai Flights</div>
+                        <div class="line2">Via - Delhi, Mumbai, Coimbatore, Madurai</div>
+                    </div>
+                </div>
+                <div class="div2">
+                    <div class="logo"></div>
+                    <div class="label">
+                        <div class="line1">Goa Flights</div>
+                        <div class="line2">Via - Delhi, Mumbai, Bangalore, Ahmedabad</div>
+                    </div>
+                </div>
+                <div class="div3">
+                    <div class="logo"></div>
+                    <div class="label">
+                        <div class="line1">Mumbai Flights</div>
+                        <div class="line2">Via - Delhi, Bangalore, Chennai, Ahmedabad</div>
+                    </div>
+                </div>
+                <div class="div4">
+                    <div class="logo"></div>
+                    <div class="label">
+                        <div class="line1">Hyderabad Flights</div>
+                        <div class="line2">Via - Chennai, Mumbai, Bangalore, Delhi</div>
+                    </div>
+                </div>
+                <div class="div5">
+                    <div class="logo"></div>
+                    <div class="label">
+                        <div class="line1">Delhi Flights</div>
+                        <div class="line2">Via - Pune, Mumbai, Bangalore, Chennai</div>
+                    </div>
+                </div>
+                <div class="div6">
+                    <div class="logo"></div>
+                    <div class="label">
+                        <div class="line1">Pune Flights</div>
+                        <div class="line2">Via - Delhi, Bangalore, Chennai, Ahmedabad</div>
+                    </div>
+                </div>
+                <div class="div7">
+                    <div class="logo"></div>
+                    <div class="label">
+                        <div class="line1">Kolkata Flights</div>
+                        <div class="line2">Via - Delhi, Mumbai, Bangalore, Pune</div>
+                    </div>
+                </div>
+                <div class="div8">
+                    <div class="logo"></div>
+                    <div class="label">
+                        <div class="line1">Bangalore Flights</div>
+                        <div class="line2">Via - Delhi, Pune, Mumbai, Kolkata</div>
+                    </div>
+                </div>
+                <div class="div9">
+                    <div class="logo"></div>
+                    <div class="label">
+                        <div class="line1">Jaipur Flights</div>
+                        <div class="line2">Via - Delhi, Mumbai, Pune, Bangalore</div>
+                    </div>
+                </div>
+            </div>
+            <div class="bar7">
+                <div class="div1">
+                    <div class="line1">Product Offering</div>
+                    <div class="line2">Flights, International Flights, Charter Flights, Hotels, International Hotels, Homestays and Villas, Activities, Holidays In India, International Holidays, Book Hotels From UAE, myBiz for Corporate Travel, Book Online Cabs, Book Bus Tickets, Book Train Tickets, Cheap Tickets to India, Book Flights From US, Book Flights From UAE, Trip Planner, Gift Cards, Trip Money, Trip Ideas, Travel Blog, PNR Status, MakeMyTrip Advertising Solutions, One Way Cab</div>
+                </div>
+                <div class="div2">
+                    <div class="line1">MakeMyTrip</div>
+                    <div class="line2">About Us, Investor Relations, Careers, MMT Foundation, CSR Policy, myPartner - Travel Agent Portal, Foreign Exchange, List your hotel, Partners- Redbus, Partners- Goibibo, Advertise with Us</div>
+                </div>
+                <div class="div3">
+                    <div class="line1">About the Site</div>
+                    <div class="line2">Customer Support, Payment Security, Privacy Policy, User Agreement, Terms of Service, More Offices, Make A Payment, Work From Home</div>
+                </div>
+                <div class="div4">
+                    <div class="line1">Quick Links</div>
+                    <div class="line2">Flights Discount Coupons, Domestic Airlines, Indigo Airlines, Air Asia, SpiceJet, GoAir, Air India, Air India Express, Vistara, New Delhi Mumbai Flights, Pune Delhi Flights, Delhi Chennai Flights, Delhi Guwahati Flights, Mumbai Varanasi Flights, Guwahati Delhi Flights, Goa Delhi Flights, Delhi Goa Flights, Delhi Chennai Flights</div>
+                </div>
+                <div class="div5">
+                    <div class="line1">Important Links</div>
+                    <div class="line2">Cheap Flights, Flight Status, Chennai Mumbai flights, Mumbai Hyderabad flights, Hyderabad Bangalore flights, Pune Bangalore flights, Mumbai Jaipur flights, Mumbai Chandigarh flights, Bangalore Kolkata flights, Hyderabad Visakhapatnam flights, Chandigarh Bangalore flights, Jaipur Mumbai flights, Mumbai Shirdi Flights, Delhi to Tirupati Flight, Indore to Mumbai Flight, Kolkata to Rupsi Flight, Rupsi to Guwahati Flight, Pasighat to Guwahati Flight, Delhi to Khajuraho flight, Cochin to Agatti Island Flight</div>
+                </div>
+                <div class="div6">
+                    <div class="line1">Corporate Travel</div>
+                    <div class="line2">Corporate Travel, Corporate Hotel Booking, Corporate Flight Booking, Business Travel for SME, GST Invoice for International flights, Business Travel Solutions, GST Invoice for Bus, Corporate Bus booking, myBiz - Best Business Travel Platform, GST Invoice for Flights, GST Invoice for Corporate Travel, GST Invoice for Hotels, myBiz for Small Business, Free cancellation on International Flights</div>
+                </div>
+            </div>
+        </div>
+        <div class="thirddiv">
+            <div class="q1 q">
+                <div class="line1">Q - How do I make a flight booking on MakeMyTrip?</div>
+                <div class="line2">A: You can book a flight on MakeMyTrip in five easy steps: Head over to the MakeMyTrip flight booking page, Enter your departure and arrival destinations, Select your air travel dates, Choose from our wide range of cheap flights based on your airfare preferences, Click on ‘Book Now’ and your air flight booking is done. Alternatively, you can also use the MakeMyTrip app for your flight ticket booking. Download the MakeMyTrip app, Put in the details i.e. date of journey, departure and arrival destinations, travel class of your choice, Select on your best comfortable option and click on 'Book Now'.</div>
+            </div>
+            <div class="q2 q">
+                <div class="line1">Q - Can I avail domestic flight offers on MakeMyTrip?</div>
+                <div class="line2">A: Of course, you can. While making domestic flight bookings, you can avail any special offer that is active at that time. In accordance with the offer selected, a listing of eligible cheapest flights would show up on your screen. You can then apply the price filter and click on the downwards arrow, following which budget-friendly flights would start showing up in ascending order from the top (lowest price on top).</div>
+            </div>
+            <div class="q3 q">
+                <div class="line1">Q - How can I avail budget air tickets on MakeMyTrip?</div>
+                <div class="line2">A: It’s super-easy to avail budget airfare while booking your cheap flight tickets on MakeMyTrip. Just select the ‘Price’ filter once the available flight options are displayed and adjust according to your convenience. On the MakeMyTrip app, you can select the downward arrow, which will show the lowest airfare at the top and continue downward in ascending order.</div>
+            </div>
+            <div class="q4 q">
+                <div class="line1">Q - Why could I not avail the flight booking offers at the time of checkout?</div>
+                <div class="line2">A: MakeMyTrip makes use of a world-class real-time reservation database to list airfare and availability. As dynamic changes in airfare take place, or the available flight tickets sell out, the database reflects the changes in real-time. Hence, we suggest, you double-check online flight booking prices when purchasing flight tickets, as the airfare might have been dynamically updated since you first selected the air travel dates or planned your itinerary.</div>
+            </div>
+        </div>
+        <div class="fourthdiv">
+            <div class="div1">
+                <div class="twitterlogo" onclick="window.open('https://twitter.com/i/flow/login?redirect_after_login=%2Fmakemytrip%2F')"></div>
+                <div class="fblogo" onclick="window.open('https://www.facebook.com/makemytrip/')"></div>
+            </div>
+            <div class="div2">
+                <div class="copyright">
+                    <div class="logo"></div>
+                    2023 MAKEMYTRIP PVT. LTD.
+                </div>
+                <div class="country">
+                    Country <strong>India USA UAE</strong>
+                </div>
+            </div>
+        </div>
+        <script src="suggest.js"></script>
+        <script src="index.js"></script>
+        
+    </body>
+</html>

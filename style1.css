@@ -1,0 +1,1612 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+*{
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: border-box;
+}
+.firstdiv .nav-bar{
+    align-items: center;
+    height:47px;
+    width:fit-content;
+    background-color: rgb(4, 4, 74);
+    color:azure;
+    margin: 0px 32px 35px 32px;
+    display:flex;
+    padding:10px 0px;
+}
+.firstdiv .mmtlogo{
+    height: 36px;
+    width:  113px;
+    margin-right: 200px;
+}
+.firstdiv .logomain{
+    height:36px;
+    width:113px;
+    background-image: url(https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/header/mmtLogoWhite.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity:1;    
+}
+.firstdiv .offer{
+    cursor:pointer;
+    align-items: center;
+    height: 42px;
+    width: fit-content;
+    display:flex;
+    padding: 5px 10px;
+    justify-content: space-evenly;
+}
+.firstdiv .offertext{
+    align-items: center;
+    height:25px;
+    width:fit-content;
+}
+.firstdiv .offerline1{
+    font-size: 12px;
+    font-weight: bold;
+    color:#FFFFFF;
+}
+.firstdiv .offerline2{
+    font-size: 10px;
+    color: #c2c2c2;
+}
+.firstdiv .offerlogo{
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    background-image: url(offerlogo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.firstdiv .mybiz{
+    cursor: pointer;
+    margin-top: 5px;
+    align-items: center;
+    height:42px;
+    width:fit-content;
+    padding:5px 10px;
+    display: flex;
+}
+.firstdiv .mybizlogo{
+    height:35px;
+    width:35px;
+    background-image: url(mybizlogo.avif);
+    background-position: 0px 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right:10px;
+}
+.firstdiv .mybizline1{
+    font-size:12px;
+    font-weight:bold;
+}
+.firstdiv .mybizline2{
+    font-size:10px;
+}
+.firstdiv .mytrips{
+    cursor:pointer;
+    margin-top: 5px;
+    align-items: center;
+    height:42px;
+    width:fit-content;
+    padding: 5px 10px;
+    display: flex;
+}
+.firstdiv .mytripslogo{
+    height:30px;
+    width:35px;
+    background-image: url(suitcase.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+.firstdiv .mytripsline1{
+    font-size:12px;
+    font-weight: bold;
+    color:#FFFFFF;
+}
+.firstdiv .mytripsline2{
+    font-size:10px;
+    color:#c2c2c2;
+}
+.firstdiv .login{
+    cursor: pointer;
+    margin-top:5px;
+    background: rgb(218,217,233);
+    background: radial-gradient(circle, rgba(218,217,233,1) 0%, rgba(27,133,243,1) 35%, rgba(0,160,255,1) 100%);
+    height:42px;
+    width:fit-content;
+    padding:5px 10px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius:5px;
+}
+.firstdiv .loginlogomy{
+    height:22px;
+    width:23px;
+    margin-right: 10px;
+    background-image: url(MMYT.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.firstdiv .logintext{
+    font-size: 10px;
+    color: #FFFFFF;
+    margin-right:20px;
+}
+.firstdiv .logoarrow{
+    height:12px;
+    width:12px;
+    background-image: url(arrow-down-sign-to-navigate.png);
+    background-size: contain;
+}
+.firstdiv .country{
+    cursor:pointer;
+    margin-left:10px;
+    margin-top: 5px;
+    height:42px;
+    width:fit-content;
+    padding: 5px 10px;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: rgb(55, 62, 80);
+    border-radius: 5px;
+}
+.countrylogo{
+    height:25px;
+    width:25px;
+    margin-right: 10px;
+    background-image:url('https://img.icons8.com/color/48/india.png');
+    background-size:contain;
+}
+.firstdiv .countrytext{
+    width:max-content;
+    font-size:11px;
+    color:#FFFFFF;
+    margin-right: 10px;
+}
+.firstdiv{
+    height:fit-content;
+    width:100%;
+    background-color: rgb(4, 4, 74);
+}
+.firstdiv .searchwidget{
+    background-color: #FFFFFF;
+    margin:auto;
+    height: 380px;
+    width:95%;
+    border-radius: 5px;
+    padding:10px;
+}
+.firstdiv .swline1{
+    margin:auto;
+    width:100%;
+    height:29px;
+    display:flex;
+    justify-content:space-between;
+    font-size:14px;
+    align-content: center;
+}
+.firstdiv .tripmode{
+    display:flex;
+    justify-content:space-evenly;
+    color: #4a4a4a;
+}
+.firstdiv .tripmode label{
+    margin:0px 5px;
+    align-items: center;
+    color: #4a4a4a;
+    font-weight:100;
+    width:max-content;
+}
+.firstdiv .tripmode > div{
+    padding:5px;
+    align-items: center;
+    max-height:29px;
+    width:fit-content;
+    display:flex;
+    margin-right: 5px;  
+}
+.firstdiv .international{
+    padding:5px;
+    max-height:29px;
+    color:#4a4a4a;
+    font-size:14px;
+}
+.firstdiv .swline2{
+    margin: auto;
+    height:132px;
+    width:100%;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: #d9d7d7;
+}
+.firstdiv .from{
+    border-style:solid;
+    border-width: 1px;
+    border-color: #d9d7d7;
+    cursor: pointer;
+    width:fit-content;
+    height:100%;
+    padding:10px 19px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.firstdiv .from:hover{
+    background-color: #dbecfe;
+}
+.firstdiv .to{
+    border-style:solid;
+    border-width: 1px;
+    border-color: #d9d7d7;
+    cursor: pointer;
+    width:fit-content;
+    height:100%;
+    padding:10px 19px;
+}
+.firstdiv .to:hover{
+    background-color: #dbecfe;
+}
+.firstdiv .departure{
+    border-style:solid;
+    border-width: 1px;
+    border-color: #d9d7d7;
+    cursor: pointer;
+    width:fit-content;
+    height:100%;
+    padding:10px 19px;
+}
+.firstdiv .departure:hover{
+    background-color: #dbecfe;
+}
+.firstdiv .return{
+    border-style:solid;
+    border-width: 1px;
+    border-color: #d9d7d7;
+    cursor: pointer;
+    width:fit-content;
+    height:100%;
+    padding:10px 19px;
+}
+.firstdiv .return:hover{
+    background-color: #dbecfe;
+}
+.firstdiv .travellers{
+    border-style:solid;
+    border-width: 1px;
+    border-color: #d9d7d7;
+    cursor: pointer;
+    width:fit-content;
+    height:132px;
+    padding:10px 19px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.firstdiv .travellers:hover{
+    background-color: #dbecfe;
+}
+.firstdiv .bluearrowdown{
+    height:12px;
+    width:12px;
+    background-image: url(blue-down-button.png);
+    background-size: contain;
+    display:inline-flex;
+    cursor: pointer;
+}
+.firstdiv .fromsearchinput .autocombox{
+    max-height: 36px;
+    width:90%;
+    background-color:inherit;
+    padding:10px 8px;
+    overflow-y: auto;
+    opacity: 1;
+    pointer-events: none;
+}
+.firstdiv .fromsearchinput input{
+    background-color: inherit;
+    height:36px;
+    width:100%;
+    font-size: 30px;
+    font-weight: bold;
+    outline:none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border:none;
+}
+.firstdiv .autocombox li{
+    font-size: 14px;
+    height:auto;
+    list-style: none;
+    padding:8px 12px;
+    cursor:default;
+    width:80%;
+    display:none;
+}
+.firstdiv .fromsearchinput{
+    display: inline;
+}
+.firstdiv .autocombox li:hover{
+    background-color: #c2c2c2;
+}
+.firstdiv .fromsearchinput.active .autocombox{
+    box-shadow:0px 0px 5px 1px #888888;
+    background-color: #ededed;
+    position: relative;
+    z-index:3;
+    max-height:130px;
+    padding:10px 8px;
+    opacity:1;
+    pointer-events: auto;
+}
+.firstdiv .fromsearchinput.active .autocombox li{
+    display: block;
+}
+.firstdiv .airport{
+    max-height:17px;
+    width:auto;
+    font-size: 14px;
+    color:#4a4a4a;
+}
+.firstdiv .tosearchinput .autocombox{
+    max-height: auto;
+    width:90%;
+    background-color:inherit;
+    padding:10px 8px;
+    overflow-y: auto;
+    opacity: 1;
+    pointer-events: none;
+}
+.firstdiv .tosearchinput input{
+    background-color:inherit;
+    height:36px;
+    width:100%;
+    font-size: 30px;
+    font-weight: bold;
+    outline:none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border:none;
+}
+.firstdiv .tosearchinput{
+    display: inline;
+}
+.firstdiv .tosearchinput.active .autocombox{
+    box-shadow:0px 0px 5px 1px #888888;
+    background-color: #ededed;
+    position: relative;
+    z-index:3;
+    max-height:130px;
+    padding:10px 8px;
+    opacity:1;
+    pointer-events: auto;
+}
+.firstdiv .tosearchinput.active .autocombox li{
+    display: block;
+}
+.firstdiv .swapicon{
+    z-index:2;
+    position: relative;
+    margin:auto;
+    bottom:190px;
+    right:305px;
+    height:40px;
+    width:40px;
+    background-image: url(swap.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    border-radius: 100px;
+    box-shadow:0px 0px 5px 1px #888888;
+}
+.firstdiv #picker1{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding:6px 0px;
+    background-color: inherit;
+    border: none;
+    color: #4a4a4a;
+}
+.firstdiv #picker2{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding:6px 0px;
+    background-color: inherit;
+    border:none;
+    color:#4a4a4a;
+}
+.firstdiv .returninput.datetimepick{
+    border:none;
+    width:90%;
+}
+.firstdiv .datetimepick{
+    outline: none;
+    width:100%;
+    display: flex;
+    align-items: center;
+}
+.firstdiv .numpersons{
+    color:black;
+    height:36px;
+    width:24px;
+    font-size: 30px;
+}
+.firstdiv .persons{
+    display:flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+.firstdiv .traveller{
+    font-size: 20px;
+}
+.firstdiv .travelclass{
+    width:200px;
+    font-size: 14px;
+    color: #4a4a4a;
+}
+.firstdiv .dropdown{
+    z-index: 3;
+    position:relative;
+    display:inline-block;
+}
+.firstdiv .dropdown .dropdown-content{
+    display: none;
+    right:0;
+    height:337px;
+    width:680px;
+    padding:20px 40px;
+    position: absolute;
+    top:30px;
+    background-color: #FFFFFF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+}
+
+.firstdiv .dropdown .dropdown-content.active1{
+    display: block;
+}
+.firstdiv .button{
+    border-radius: 5px; 
+    background-color: #FFFFFF;
+    margin:0px 5px;
+    border-width: 0;
+    width: fit-content;
+    height: 100%;
+    font-size: 12px;
+}
+.firstdiv .button:first-child{
+    margin:0px 5px 0px 0px;
+}
+.firstdiv .button:last-child{
+    margin:0px 0px 0px 0px;
+}
+.firstdiv .bar{
+    align-items: center;
+    height:min-content;
+    width:fit-content;
+    display: flex;
+}
+.firstdiv .buttonless9{
+    align-items: center;
+    border-radius: 5px;
+    border-color: transparent;
+    box-shadow: 0px 0px 5px 2px #e4e4e4;
+}
+.firstdiv .buttonless6{
+    align-items: center;
+    border-radius: 5px;
+    border-color: transparent;
+    box-shadow: 0px 0px 5px 2px #e4e4e4;
+}
+.firstdiv .buttongreater9{
+    margin-left: 5px;
+    align-items: center;
+    border-style:solid;
+    border-width:1px;
+    border-radius: 5px;
+    border-color: transparent;
+    box-shadow: 0px 0px 5px 2px #e4e4e4;
+}
+.firstdiv .buttongreater6{
+    margin-left: 5px;
+    align-items: center;
+    border-style:solid;
+    border-width:1px;
+    border-radius: 5px;
+    border-color: transparent;
+    box-shadow: 0px 0px 5px 2px #e4e4e4;
+}
+.firstdiv .button:hover{
+    background-color: #e4e4e4;
+    font-weight: bold;
+}
+.firstdiv .button.clicked{
+    background-color:#008cff;
+    height: 100%;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.firstdiv .dropdownlabel .line1{
+    font-weight: bold;
+    font-size: 12px;
+    color: #4a4a4a;
+}
+.firstdiv .dropdownlabel .line2{
+    font-size: 12px;
+    color:#9b9b9b;
+    margin-top: 0px;
+}
+.firstdiv .dropdownlabel{
+    margin-bottom: 10px;
+}
+.firstdiv .childreninfant{
+    margin:20px 0px;
+    display:flex;
+    justify-content: space-between;
+}
+.firstdiv .travelclassbar{
+    width:fit-content;
+    align-items: center;
+    border-style:solid;
+    border-width:0px;
+    border-radius: 5px;
+    border-color: transparent;
+    box-shadow: 0px 0px 5px 2px #e4e4e4;
+}
+.firstdiv .choosetravelbutton{
+    border-radius: 5px;
+    font-size: 12px;
+    color: #4a4a4a;
+    background-color: #FFFFFF;
+    height:32px;
+    border-width:0;
+}
+.firstdiv .choosetravelbutton.clicked{
+    background-color:#008cff;
+    color: #FFFFFF;
+}
+.firstdiv .applybutton{
+    position: absolute;
+    right:20px;
+    bottom:20px;
+    height:32px;
+    width:88px;
+    background-image:linear-gradient(93deg,#53b2fe,#065af3);
+    color:#FFFFFF;
+    border:0;
+    border-radius: 34px;
+    box-shadow: 0 1px 7px 0 rgba(0,0,0,.2);;
+}
+.firstdiv .swline3{
+    margin:auto;
+    position:relative;
+    z-index:1;
+    margin-top: 20px;
+    height:60px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.firstdiv .faretype{
+    position: relative;
+    z-index:1;
+    align-items: center;
+    width: 662px;
+    display: flex;
+}
+.firstdiv .farebar{
+    position: relative;
+    z-index:0;
+    display: flex;
+}
+.firstdiv .farebar .regularfare.fare{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.firstdiv .farebar .doubleseatfare.fare{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.firstdiv .farebar .fare{
+    position: relative;
+    z-index: 0;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #ededed;      
+    color: #4a4a4a;    
+    width:fit-content;
+    font-size:12px;
+    font-weight: normal;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d9d7d7;
+    cursor: pointer;
+}
+.firstdiv .toarrow{
+    margin:0px 5px 0px 5px;
+    height:10px;
+    width:10px;
+    background-image: url(right-arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.firstdiv .faretypelabel{
+    color: #4a4a4a;
+    font-size:12px;
+    font-weight: bold;
+}
+.firstdiv .fare label{
+    font-weight: normal;
+    margin:0px 0px 0px 5px;
+}
+.firstdiv *[data-tooltip] {
+    position: relative;
+}
+.firstdiv *[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    z-index:2;
+    top: 65px;
+    left: 0px;
+    width: 250px;
+
+    pointer-events: none;
+    display:none;
+    -webkit-transition: opacity .15s ease-in-out;
+    -moz-transition: opacity .15s ease-in-out;
+    -ms-transition: opacity .15s ease-in-out;
+    -o-transition: opacity .15s ease-in-out;
+    transition: opacity .15s ease-in-out;
+
+    font-size: 11px;
+    line-height: 16px;
+    background: #249995;
+    color:#FFFFFF;
+    padding: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.4);
+}
+
+.firstdiv *[data-tooltip]:hover::after {
+    display:block;
+}
+.firstdiv .fare:hover{
+    background-color: #b9e0ff;
+}
+.firstdiv .trendingsearches{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+.firstdiv .trendingsearcheslabel{
+    font-weight: bold;
+}
+.firstdiv .trendingsearches .ts1{
+    border-radius: 4px;
+    margin:10px;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    padding:8px 10px;
+}
+.firstdiv .trendingsearches .ts2{
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    padding:8px 10px;
+}
+.firstdiv .swline0{
+    margin:auto;
+    padding: 5px;
+    background-color: #FFFFFF;
+    position: relative;
+    bottom:30px;
+    z-index:1;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 5px;
+    height:fit-content;
+    width:fit-content;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 5px 2px #8f8d8d;
+}
+.firstdiv .swline0element{
+    margin:15px 15px 5px 15px;
+    width:fit-content;
+    height:58px;
+}
+.firstdiv .icon{
+    margin:auto;
+    height:40px;
+    width:40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.firstdiv .flighticon{
+    background-image: url(airplaneblack.png)
+}
+.firstdiv .hotelicon{
+    background-image:url(hotelsblack.png);
+}
+.firstdiv .homestayicon{
+    background-image: url(homestayblack.png);
+}
+.firstdiv .holidayicon{
+    background-image:url(vacationblack.png);
+}
+.firstdiv .trainicon{
+    background-image: url(trainblack.png);
+}
+.firstdiv .busicon{
+    background-image: url(busblack.png);
+}
+.firstdiv .cabicon{
+    background-image: url(taxiblack.png);
+}
+.firstdiv .forexicon{
+    background-image: url(forexblack.png);
+}
+.firstdiv .charterflighticon{
+    background-image: url(private-jetblack.png);
+}
+.firstdiv .searchbutton{
+    border:none;
+    position: relative;
+    bottom:50px;
+    left:500px;
+    z-index: 0;
+    background-image:linear-gradient(93deg,#53b2fe,#065af3);
+    color:#FFFFFF;
+    border-radius: 34px;
+    box-shadow: -2px -2px 2px #b4b3b3;
+    width:216px;
+    padding:10px;
+    font-weight: bolder;
+    font-size:20px;
+}
+.firstdiv .exploremorelogo{
+    margin:0px 5px;
+    height:20px;
+    width:20px;
+    background-image: url(double\ down-arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.firstdiv .exploremore
+{
+    position:relative;
+    left:530px;
+    bottom:35px;
+    display:flex;
+    color:#FFFFFF;
+}
+.seconddiv{
+    margin:auto;
+    background-color:#e3e1e1;
+    height:fit-content;
+    width:100%;
+}
+.seconddiv .bar1{
+    cursor: pointer;
+    margin:auto;
+    display: flex;
+    position: relative;
+    bottom:20px;
+    z-index:1;
+    background-color: #FFFFFF;
+    width:fit-content;
+    height:55px;
+    border-radius: 30px;
+}
+.seconddiv .bar1 .where2go{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-style: solid;
+    border-width: thin;
+    border-color:transparent #c0c0c0 transparent transparent;
+    width:fit-content;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding:10px;
+}
+.seconddiv .bar1 .where2go .where2golabel{
+font-size: 14px;
+color: #4a4a4a;
+font-weight: normal;
+}
+.seconddiv .bar1 .where2go .where2gologo{
+    margin-right: 5px;
+    height:30px;
+    width:30px;
+    background-image: url(https://promos.makemytrip.com/appfest/2x/icon-wheretogo-23062022.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.seconddiv .bar1 .insurance{
+    border-style: solid;
+    border-width: thin;
+    border-color:transparent #c0c0c0 transparent transparent;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding:10px;
+    width:fit-content;
+}
+.seconddiv .bar1 .insurance .insurancelogo{
+    margin-right: 5px;
+    height:30px;
+    width:30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(https://promos.makemytrip.com/appfest/2x/trip-money-1.png);
+}
+.seconddiv .bar1 .line1{
+font-size:14px;
+}
+.seconddiv .bar1 .line2{
+    font-size:12px;
+}
+.seconddiv .bar1 .flights{
+    padding:10px;
+    border-style: solid;
+    border-width: thin;
+    border-color:transparent #c0c0c0 transparent transparent;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width:fit-content;
+}
+.seconddiv .bar1 .flights .flightslogo{
+    margin-right: 5px;
+    height:30px;
+    width:30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(https://promos.makemytrip.com/Growth/Images/B2C/2x/dt_tert_flights.png);
+}
+.seconddiv .bar1 .mice{
+    padding:10px;
+    border-style: solid;
+    border-width: thin;
+    border-color:transparent #c0c0c0 transparent transparent;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width:fit-content;
+}
+.seconddiv .bar1 .mice .micelogo{
+    margin-right: 5px;
+    height:30px;
+    width:30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(https://promos.makemytrip.com/images/myBiz/MICE/mice%20icon%20-%20square.png);
+}
+.seconddiv .bar1 .giftcards{
+    padding:10px;
+    width:fit-content;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.seconddiv .bar1 .giftcards .giftcardslogo{
+    margin-right: 5px;
+    height:30px;
+    width:30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(https://promos.makemytrip.com/appfest/2x/gift%20card%201.png)
+}
+.seconddiv .bar2{
+    margin:3px 5px;
+    justify-content: space-between;
+    padding:25px 40px;
+    margin:auto;
+    width:95%;
+    height:520px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+.seconddiv .bar2 .offerslabel{
+    font-size:32px;
+    font-weight: bolder;
+}
+
+.seconddiv .bar2 .offerbar{
+    height:30px;
+    border-bottom: solid 1px #c0c0c0;
+    display:flex;
+}
+
+.seconddiv .bar2 .offerbar *{
+    cursor:pointer;
+    font-size: 14px;
+    font-weight: normal;
+    padding:5px;
+}
+.seconddiv .bar2 .offerbar *.active1{
+    color:#008cff;
+    font-weight: bolder;
+    border-bottom: solid 3px #008cff;
+}
+
+.firstdiv .swline0 *{
+    cursor:pointer;
+}
+
+.firstdiv .swline0 *.active1{
+    color:#008cff;
+    font-weight: bolder;
+    border-bottom: solid 3px #008cff;
+}
+.seconddiv .bar2 .viewall{
+    border:none;
+    background-color: transparent;
+    color: #008cff;
+    font-size:16px;
+    display:flex;
+    height:fit-content;
+    justify-content: space-between;
+}
+
+.viewall_logo{
+    margin-left: 10px;
+    height:20px;
+    width:30px;
+    background-image: url(right-arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.seconddiv .bar2 .navbuttons{
+    justify-content: space-evenly;
+    width: fit-content;
+    height:fit-content;
+    border-radius: 30px;
+    box-shadow:0px 0px 3px 1px #b4b3b3;
+}
+
+.seconddiv .bar2 .navbuttons *{
+    margin:0;
+    background-color: #FFFFFF;
+    color:#008cff;
+    font-size:25px;
+    font-weight: bolder;
+    border:none;
+}
+
+.seconddiv .bar2 .navbuttons .prev{
+    cursor:pointer;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-right: solid 1px #c0c0c0;
+}
+.seconddiv .bar2 .navbuttons .next{
+    cursor:pointer;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.seconddiv .bar2 .viewdiv{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.seconddiv .bar2 .offerheader{
+    height:fit-content;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.seconddiv .bar2 .offercards{
+    padding: 20px;
+    height:400px;
+    width:100%;
+    background: transparent;
+}
+.seconddiv .bar2 .offercards .cards{
+    background-color: inherit;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 1rem;
+    grid-auto-flow: column;
+    grid-auto-columns: calc(47% - 2rem);
+    height: fit-content;
+    padding:5px;
+}
+.seconddiv .bar2 .offercards .cards .card-content{
+    display: none;
+    box-shadow:0px 0px 3px 1px #b4b3b3;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    color: #111;
+  }
+.seconddiv .bar2 .offercards .cards .card-content.active1{
+    padding:10px;
+    display:inline;
+    box-shadow:0px 0px 3px 1px #b4b3b3;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    color: #111;
+}
+.seconddiv .bar2 .offercards .cards .card-content.active1 .header{
+    font-size: 18px;
+    display:flex;
+    margin-bottom: 10px;
+}
+.seconddiv .bar2 .offercards .cards .card-content.active1 .header .line0{
+    font-size:12px;
+}
+.seconddiv .bar2 .offercards .cards .card-content.active1 .header .line1{
+    font-weight: 900;
+    padding:10px 0px;
+    border-bottom:solid 0.5px red;
+}
+.seconddiv .bar2 .offercards .cards .card-content.active1 .header .line2{
+    padding:10px 0px;
+    color:#4a4a4a;
+    font-size:14px;
+    font-weight: normal;
+}
+.seconddiv .bar2 .offercards .cards .card-content.active1 .footer{
+    color:#4a4a4a;
+    font-size:14px;
+    display:flex;
+    justify-content: space-around;
+}
+.seconddiv .bar2 .offercards .cards .card-content.active1 .footer .viewdetails{
+    color:#008cff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.seconddiv .bar2 .offercards .cards .card-content.active1 .footer .tc{
+    font-size:12px;
+}
+.seconddiv .bar2 .cards .card-content.active1 .image{
+    margin-right: 10px;
+    border-radius: 6px;
+    height:134px;
+    min-width:134px;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+#fb1 .image{
+    background-image: url(https://promos.makemytrip.com/notification/xhdpi//Welcome-DH-190922@2x.jpg);
+}
+#fb2 .image{
+    background-image: url(https://promos.makemytrip.com/notification/xhdpi//Welcome-Bus-190922@2x@2x@2x.jpg);
+}
+#fb3 .image{
+    background-image: url(https://promos.makemytrip.com/notification/xhdpi//Welcome-Train-190922@2x@2x.jpg);
+}
+#fb4 .image{
+    background-image: url(https://promos.makemytrip.com/notification/xhdpi//Welcome-Cab-190922@2x.jpg);
+}
+#fb5 .image{
+    background-image: url(https://promos.makemytrip.com/notification/xhdpi//Welcome-Holidays-190922@2x.jpg);
+}
+#fb6 .image{
+    background-image: url(https://promos.makemytrip.com/notification/xhdpi//Welcome-Offer-190922@2x.jpg);
+}
+
+
+#fl1 .image{
+    background-image: url(https://promos.makemytrip.com/notification/xhdpi//Desktop-StudentonBoard-30May.jpg);
+}
+#fl2 .image{
+    background-image: url(	https://promos.makemytrip.com/notification/xhdpi//Flights-insurance-116x116.jpg);
+}
+#fl3 .image{
+    background-image: url(	https://promos.makemytrip.com/notification/xhdpi//116X116-indian-12072023.jpg);
+}
+#fl4 .image{
+    background-image: url(	https://promos.makemytrip.com/notification/xhdpi//116X116-hdfc-emi-21062023.jpg);
+}
+#fl5 .image{
+    background-image: url(	https://promos.makemytrip.com/notification/xhdpi//116X116-jazeera-19062023.jpg);
+}
+#fl6 .image{
+    background-image: url(	https://promos.makemytrip.com/notification/xhdpi//avaan-116x116-19082022.jpg);
+}
+
+#hot1 .image{
+    background-image: url(https://promos.makemytrip.com/notification/xhdpi//Desktop-ATW-120523-1.jpg);
+}
+#hot2 .image{
+    background-image: url('https://promos.makemytrip.com/notification/xhdpi//Desktop-CricketWorldCup-1Jul.jpg?im=Resize=(134,134)');
+}
+#hot3 .image{
+    background-image: url('https://promos.makemytrip.com/notification/xhdpi//116x116-indusind-dh-30062022.jpg?im=Resize=(134,134)');
+}
+#hot4 .image{
+    background-image: url(	https://promos.makemytrip.com/notification/xhdpi//oyo-116x116-10112022.jpg);
+}
+
+#hol1 .image{
+    background-image: url(https://promos.makemytrip.com/notification/xhdpi//Desktop_BlinknMiss_26Apr.jpg);
+}
+#hol2 .image{
+    background-image: url(https://promos.makemytrip.com/notification/xhdpi//Desktop-RockynRani-10Jul.jpg);
+}
+
+#tr1 .image{
+    background-image: url(	https://promos.makemytrip.com/appfest/xhdpi//Desktop-Diwali-11Jul.jpg);
+}
+#tr2 .image{
+    background-image: url(	https://promos.makemytrip.com/notification/xhdpi//onecard-116x116-09062023.jpg);
+}
+#tr3 .image{
+    background-image: url(	https://promos.makemytrip.com/notification/xhdpi//train04-116x116-06012021.jpg);
+}
+#tr4 .image{
+    background-image: url(https://promos.makemytrip.com/notification/xhdpi//GT-Train-Desktop.jpg);
+}
+
+#cab1 .image{
+    background-image: url(	https://promos.makemytrip.com/notification/xhdpi//onecard-116x116-09062023.jpg);
+}
+#cab2 .image{
+    background-image: url('	https://promos.makemytrip.com/notification/xhdpi//alia-116x116-07042023.jpg?im=Resize=(134,134)');
+}
+#cab3 .image{
+    background-image: url(	https://promos.makemytrip.com/appfest/xhdpi//SUV_9JAN.jpg);
+}
+#cab4 .image{
+    background-image: url('https://promos.makemytrip.com/notification/xhdpi//Desktop-ATCabCiti-wise-160223.jpg?im=Resize=(134,134)');
+}
+
+#b1 .image{
+    background-image: url(https://promos.makemytrip.com/notification/xhdpi//icici-df-1-116x116-04072023.jpg);
+}
+#b2 .image{
+    background-image: url(https://promos.makemytrip.com/notification/xhdpi//icici-ih-116x116-04072023.jpg);
+}
+#b3 .image{
+    background-image: url(https://promos.makemytrip.com/notification/xhdpi//yes-116x116-14072023.jpg);
+}
+#b4 .image{
+    background-image: url(https://promos.makemytrip.com/notification/xhdpi//116X116-mobikwik-30052023.jpg);
+}
+#b5 .image{
+    background-image: url(https://promos.makemytrip.com/notification/xhdpi//FedBank_DomHot_07072023.jpg);
+}
+#b6 .image{
+    background-image: url(https://promos.makemytrip.com/notification/xhdpi//FedBank_IntHot_07072023.jpg);
+}
+#b7 .image{
+    background-image: url(https://promos.makemytrip.com/notification/xhdpi//sbi-116x116-06012021.jpg);
+}
+#b8 .image{
+    background-image: url(https://promos.makemytrip.com/notification/xhdpi//sbi-116x116-19082020.jpg);
+}
+.seconddiv .bar3{    
+    justify-content: space-between;
+    margin: auto;
+    width:95%;
+    margin-top: 20px;
+    background-color: inherit;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    gap:10px;
+}
+.seconddiv .bar3 > div{
+    cursor: pointer;
+    box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:10px;
+    display:flex;
+}
+.seconddiv .bar3 .logo{
+    align-items: center;
+    height:68px;
+    width:68px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right:10px;
+}
+.seconddiv .bar3 .line1{
+    font-size:16px;
+    line-height: 18px;
+    margin-bottom: 5px;
+    color:#4a4a4a;
+}
+.seconddiv .bar3 .line2{
+    font-size:16px;
+    color:#008cff;
+}
+.seconddiv .bar3 .travelguidelines .logo{
+background-image: url(https://promos.makemytrip.com/notification/xhdpi/Vande-Flight-10072020.png);
+margin-right:10px;
+}
+.seconddiv .bar3 .changelanguage .logo{
+    background-image: url(https://promos.makemytrip.com/Growth/Images/B2C/2x/language1@2x_20210901.png);
+    margin-right:10px;
+}
+.seconddiv .bar3 .webcheckin .logo{
+    background-image: url(https://promos.makemytrip.com/notification/xhdpi/web-check-in-116x116-23062020.png);
+    margin-right:10px;
+}
+.seconddiv .bar4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin: auto;
+    width:95%;
+    margin-top: 20px;
+    height:180px;
+    background-color: #FFFFFF;
+    padding:25px 40px;
+    box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.1);
+}
+.seconddiv .bar4 .div1{
+    align-items: center;
+    display:flex;
+}
+.seconddiv .bar4 .div2 .phone{
+    border-radius: 5px;
+    width:fit-content;
+    border: solid 1px #b4b3b3;
+    align-items: center;
+    display:flex;
+}
+.seconddiv .bar4 .div2 .phone .stdcode{
+    margin:0px 5px;
+    font-size:16px;
+    font-weight: bold;
+}
+.seconddiv .bar4 .div2 input.phonenum{
+    border:none;
+    font-size: 14px;
+    width:280px;
+    height:100%;
+}
+.seconddiv .bar4 .div2 .phone .countrylogo{
+    height:30px;
+    width:30px;
+    margin-left:10px;
+}
+.seconddiv .bar4 .div2 .phone .getapp{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color:#008cff;
+    font-size: 16px;
+    font-weight: 900;
+    padding:10px;
+    border:solid 1px #008cff;
+}
+.seconddiv .bar4 .downloadlogo{
+    width: 92px;
+    height: 96px;
+    background-position: -155px -4px;
+    background-image: url(https://imgak.mmtcdn.com/pwa_v3/pwa_mmt_ui_assets/app-sprite.webp);
+    background-repeat: no-repeat;
+    background-size: 250px 250px;
+    object-fit: contain;
+    transform: scale(0.6);
+    margin-left: -28px;
+}
+.seconddiv .bar4 .downloadlabel .line1{
+    font-size:32px;
+    font-weight: 900;
+}
+.seconddiv .bar4 .div3{
+    width:auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:20px;
+    padding:20px;
+}
+.seconddiv .bar4 .div3 .item1{
+    cursor: pointer;
+    width: 149px;
+    height: 44px;
+    background-image: url(https://imgak.mmtcdn.com/pwa_v3/pwa_mmt_ui_assets/app-sprite.webp);
+    background-repeat: no-repeat;
+    background-size: 250px 250px;
+    background-position: -3px -55px;
+}
+.seconddiv .bar4 .div3 .item2{
+    cursor: pointer;
+    width: 149px;
+    height: 44px;
+    background-image: url(https://imgak.mmtcdn.com/pwa_v3/pwa_mmt_ui_assets/app-sprite.webp);
+    background-repeat: no-repeat;
+    background-size: 250px 250px;
+    background-position: -3px -6px;
+}
+.seconddiv .bar4 .div3 .item3{
+    background: url(https://promos.makemytrip.com/notification/xhdpi/QRCodeDT_QR-code.jpg) no-repeat;
+    background-size: contain;
+    width: 105px;
+    height: 105px;
+    grid-area: 1 / 2 / span 2 / 2;
+}
+.seconddiv .bar5{
+    border:solid 1px rgb(253, 162, 162);
+    border-left-width: 50px;
+    border-radius: 10px;
+    margin: auto;
+    width:95%;
+    margin-top: 20px;
+    height:75px;
+    background-color: #FFFFFF;
+    padding:25px 40px;
+    display:flex;
+    box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.seconddiv .bar5 .div1{
+    position: relative;
+    right:70px;
+    z-index: 1;
+    height:60px;
+    width:60px;
+    background-image: url(https://www.tripmoney.com/ext/static/TravelLoan/travelLoan.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.seconddiv .bar5 .div2{
+    right:50px;
+    position: relative;
+    font-size: 18px;
+    width:fit-content;
+}
+.seconddiv .bar5 .div2 .moneytriplogo{
+    height:30px;
+    width:100px;
+    background-image: url(moneytrip.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.seconddiv .bar5 .div3{
+    font-size: 14px;
+    font-weight: bold;
+    position:relative;
+    left: 400px;
+    color:#008cff;
+    display: flex;
+}
+.seconddiv .bar6{
+    border-radius: 10px;
+    margin: auto;
+    width:95%;
+    margin-top: 20px;
+    height:fit-content;
+    background-color: #FFFFFF;
+    padding:25px 40px;
+    display:grid;
+    gap:25px;
+    grid-template-columns: auto auto auto;
+    box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+.seconddiv .bar6 > div{
+    width:fit-content;
+    display: flex;
+    align-items: center;
+    justify-content:baseline;
+}
+
+.seconddiv .bar6 .label{
+    text-align: left;
+}
+
+.seconddiv .bar6 .line1{    
+    font-size:18px;
+    font-weight: bold;
+    color:#4a4a4a;
+    margin-bottom: 5px;
+}
+
+.seconddiv .bar6 .line2{
+    font-size:14px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #4a4a4a;
+}
+
+.seconddiv .bar6 .div1 .logo{
+    border-radius: 100px;
+    height:50px;
+    width:50px;
+    background-repeat: no-repeat;
+    background-image: url(https://promos.makemytrip.com/images/50x50-Other-23052019.png);
+    background-size: contain;
+}
+.seconddiv .bar6 .div2 .logo{
+    border-radius: 100px;
+    height:50px;
+    width:50px;
+    background-repeat: no-repeat;
+    background-image: url(https://promos.makemytrip.com/store/GoaDT.JPG);
+    background-size: contain;
+}
+.seconddiv .bar6 .div3 .logo{
+    border-radius: 100px;
+    height:50px;
+    width:50px;
+    background-repeat: no-repeat;
+    background-image: url(https://promos.makemytrip.com/store/MumbaiDT.JPG);
+    background-size: contain;
+}
+.seconddiv .bar6 .div4 .logo{
+    border-radius: 100px;
+    height:50px;
+    width:50px;
+    background-repeat: no-repeat;
+    background-image: url(https://promos.makemytrip.com/images/50x50-Ooty-23052019.png);
+    background-size: contain;
+}
+.seconddiv .bar6 .div5 .logo{
+    border-radius: 100px;
+    height:50px;
+    width:50px;
+    background-repeat: no-repeat;
+    background-image: url(	https://promos.makemytrip.com/store/DelhiDT.JPG);
+    background-size: contain;
+}
+.seconddiv .bar6 .div6 .logo{
+    border-radius: 100px;
+    height:50px;
+    width:50px;
+    background-repeat: no-repeat;
+    background-image: url(https://promos.makemytrip.com/store/PuneDT.JPG);
+    background-size: contain;
+}
+.seconddiv .bar6 .div7 .logo{
+    border-radius: 100px;
+    height:50px;
+    width:50px;
+    background-repeat: no-repeat;
+    background-image: url(https://promos.makemytrip.com/store/SingaporeDT.JPG);
+    background-size: contain;
+}
+.seconddiv .bar6 .div8 .logo{
+    border-radius: 100px;
+    height:50px;
+    width:50px;
+    background-repeat: no-repeat;
+    background-image: url(https://promos.makemytrip.com/store/BangaloreDT.JPG);
+    background-size: contain;
+}
+.seconddiv .bar6 .div9 .logo{
+    border-radius: 100px;
+    height:50px;
+    width:50px;
+    background-repeat: no-repeat;
+    background-image: url(https://promos.makemytrip.com/store/JaipurDT.JPG);
+    background-size: contain;
+}
+.seconddiv .bar7{
+    width:95%;
+    background-color:transparent;
+    margin:auto;
+    padding:30px 0px;
+}
+
+.seconddiv .bar7 >div{
+    margin: 15px;
+}
+
+.seconddiv .bar7 .line1{
+    font-size:10px;
+    font-weight:900;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.seconddiv .bar7 .line2{
+    line-height: 16px;
+    font-size:10px;
+    font-weight: normal;
+}
+.thirddiv{
+    padding:60px 30px;
+    display:grid;
+    grid-template-columns: auto auto;
+    gap:50px 100px;
+    background-color:#cecccc;
+    height:fit-content;
+    width:100%;
+}
+.thirddiv > div{
+    padding:20px;
+}
+.thirddiv .line1{
+    font-size:16px;
+    font-weight: bold;
+    margin:0px 0px 20px;
+}
+.thirddiv .line2{
+    font-size:12px;
+    font-style: normal;
+}
+.fourthdiv{
+    align-items: center;
+    justify-content: space-between;
+    display:flex;
+    background-color:#000000;
+    height:160px;
+    width:100%;
+    padding:40px;
+}
+
+.fourthdiv .div1{
+    display:flex;
+}
+.fourthdiv .div1 .twitterlogo{
+    height:30px;
+    width:30px;
+    background-image: url(twitterlogo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.fourthdiv .div1 .fblogo{
+    margin-left: 30px;
+    height:30px;
+    width:30px;
+    background-image: url(facebooklogo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.fourthdiv .div2{
+    position: relative;
+    right:0;
+    width:fit-content;
+    color:#FFFFFF;
+}
+
+.fourthdiv .div2 .copyright{
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+}
+.fourthdiv .div2 .copyright .logo{
+    height:15px;
+    width:15px;
+    background-image: url(copyrightlogo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.fourthdiv .div2 .country{
+    text-align: end;
+}
